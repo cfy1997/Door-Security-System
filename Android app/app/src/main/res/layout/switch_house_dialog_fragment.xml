@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <TextView
+        style="@style/FragmentTextViewStyle"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/switch_house_hint"/>
+
+    <EditText
+        style="@style/FragmentEditTextStyle"
+        android:hint="name of house to switch to"
+        android:id="@+id/switch_house_name"
+        android:layout_below="@+id/switch_house_hint"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        style="@style/FragmentEditTextStyle"
+        android:hint="password"
+        android:layout_below="@+id/switch_house_name"
+        android:layout_alignParentStart="true"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:id="@+id/switch_house_password"/>
+
+    <Button
+        android:text="OK"
+        style="@style/TextButtonStyle"
+        android:id="@+id/ok_button"
+        android:layout_below="@+id/switch_house_password"
+        android:layout_marginStart="70dp"
+        android:layout_alignBaseline="@+id/cancel_button"
+        android:layout_alignBottom="@+id/cancel_button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="CANCEL"
+        style="@style/TextButtonStyle"
+        android:id="@+id/cancel_button"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/switch_house_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- your theme inherits from the material theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- theme customizations -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#423b3b</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TextButtonStyle" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="NormalButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="SignInButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:backgroundTint">#a8c160</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:background">@drawable/solid_shape</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="SignUpEditTextStyle">
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:background">@drawable/solid_shape</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="FragmentEditTextStyle">
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:background">@drawable/solid_shape</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
+    <style name="NormalTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffff</item>
+    </style>
+
+    <style name="SysInfoTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#d8d6d6</item>
+    </style>
+
+    <style name="SysInfoToTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#d8d6d6</item>
+    </style>
+
+    <style name="FragmentTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+</resources>

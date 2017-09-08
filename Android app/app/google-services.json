@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1071319875822",
+    "firebase_url": "https://dooraccesssecurity-b83b8.firebaseio.com",
+    "project_id": "dooraccesssecurity-b83b8",
+    "storage_bucket": "dooraccesssecurity-b83b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071319875822:android:311de7c127945ff3",
+        "android_client_info": {
+          "package_name": "com.example.lucyzhao.dooraccesssecurity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071319875822-qpmag34vb9ifgdls47tae9mta1ft89en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lucyzhao.dooraccesssecurity",
+            "certificate_hash": "88af47c5879ce1a3cb14f9c27e972536f1041a0c"
+          }
+        },
+        {
+          "client_id": "1071319875822-u513ttr9eg2tfa0vt0brok7f4kuspl72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzDYXdy24zFMq7N9FD6BQDELHK4Cho_-s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071319875822-u513ttr9eg2tfa0vt0brok7f4kuspl72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

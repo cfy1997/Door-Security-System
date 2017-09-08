@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_clear_all_pics"
+        android:title="clear all views"
+        android:onClick="clearAllPictures"
+        android:icon="@drawable/eraser"
+        app:showAsAction="never"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_sign_out"
+        android:icon="@drawable/sign_out_inverted"
+        android:onClick="signOut"
+        android:title="sign out"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_join_house"
+        android:title="switch house"
+        android:onClick="switchHouse"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_show_info"
+        android:title="system info"
+        android:onClick="showInfo"
+        app:showAsAction="never"
+        />
+
+</menu>

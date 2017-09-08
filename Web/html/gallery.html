@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/btn-style.css">
+    <link rel="stylesheet" href="../css/gallery-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main-style.css" media="screen" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+    <script src="../js/config.js">
+    // Initialize Firebase
+    </script>
+    <script src="../sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../sweetalert/dist/sweetalert.css">
+</head>
+<body>
+
+  <script src="../js/firebase.js"></script>
+  <script src="../js/jumpPage.js"></script>
+
+
+        <div class="left-menu">
+          <div class="logo"><i></i>
+            <div>Home Secure System</div>
+          </div>
+          <div class="accordion">
+
+            <div class="section" onclick="jumpPage(this)" id="home">
+              <input type="radio" name="accordion-1" id="section-2" />
+              <label for="section-2" ><span>Home</span></label>
+            </div>
+
+            <div class="section">
+              <input type="radio" name="accordion-1" id="section-1" />
+              <label for="section-1"><span>Devices</span></label>
+              <div class="content">
+                <ul>
+                  <li id="camera" onclick="jumpPage(this)"><i></i><span  >Camera</span></li>
+                  <li id="buzzer" onclick="jumpPage(this)"><i></i><span  >Buzzer</span></li>
+                  <li id="led" onclick="jumpPage(this)"><i></i><span  >LED</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="section" id="overview" onclick="jumpPage(this)">
+              <input type="radio" name="accordion-1" id="section-3"  />
+              <label for="section-3"><span >System Overview</span></label>
+            </div>
+
+            <div class="section" id="gallery" onclick="jumpPage(this)">
+              <input type="radio" name="accordion-1" id="section-4"  checked="checked"/>
+              <label for="section-4"><span >History Gallery</span></label>
+            </div>
+
+            <div class="section" id="about_us" onclick="jumpPage(this)">
+              <input type="radio" name="accordion-1" id="section-5" />
+              <label for="section-5"><span >About Us</span></label>
+            </div>
+
+            <div class="section" onclick="signout()">
+              <input type="radio" name="accordion-1" id="section-6" />
+              <label for="section-6"><span id= "sign_out">Sign Out</span></label>
+            </div>
+
+          </div>
+        </div>
+
+
+    <div class="main-area">
+      <div class="gallery-text">
+        <img src="../img/gallery.png" id="galleryicon"  height="60px" width="60px"/>
+          <h1>History Gallery</h1><br>
+          <p>Here you can get your history photos! Wondering how does your home look like when you are away? <br><br>Check this out!</p>
+          <br><br>
+          <span id="phore">You currently have </span> <span id="totpho">number</span> <span id="phore2">photos in the system.</span><br><br>
+          <div class="main-functionality">
+            <div class="photo4">
+              <div class="gallery1">
+                <a target="_blank" href="img_fjords.png" id="ref1">
+                  <img src="../img/NIA.svg" id="photo1" width="320" height="240">
+                </a>
+                <div class="desc" id="desc1">PhotoID:</div>
+                <button class="imgbtm" onclick="deleteConfirm(1)">Delete</button>
+              </div>
+
+              <div class="gallery2">
+                <a target="_blank" href="img_forest.png" id="ref2">
+                  <img src="../img/NIA.svg" id="photo2" width="320" height="240">
+                </a>
+                <div class="desc" id="desc2">PhotoID:</div>
+                <button class="imgbtm" onclick="deleteConfirm(2)">Delete</button>
+              </div>
+
+              <div class="gallery3">
+                <a target="_blank" href="img_lights.png" id="ref3">
+                  <img src="../img/NIA.svg" id="photo3" width="320" height="240">
+                </a>
+                <div class="desc" id="desc3">PhotoID:</div>
+                <button class="imgbtm" onclick="deleteConfirm(3)">Delete</button>
+              </div>
+
+              <div class="gallery4">
+                <a target="_blank" href="img_mountains.png" id="ref4">
+                  <img src="../img/NIA.svg" id="photo4" width="320" height="240">
+                </a>
+                <div class="desc" id="desc4">PhotoID:</div>
+                <button class="imgbtm" onclick="deleteConfirm(4)">Delete</button>
+              </div>
+            </div>
+
+            <div class="bottombar">
+              <button class="btn leftbtn btn-border color-1 material-design" data-color="#2f5398" onclick="leftbuttonAction()"><</button>
+              <button class="btn middlebtn btn-border color-1 material-design" data-color="#2f5398" onclick="newrefreshPhoto()">refresh</button>
+              <button class="btn rightbtn btn-border color-1 material-design" data-color="#2f5398" onclick="rightbuttonAction()">></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    <p id = "photoCounter">-1</p>
+
+      <script src="../js/gallery.js"></script>
+      <script src="../js/btn-fade.js"></script>
+      <p id="uid">not ready</p>
+      <p id="familyid">TBD</p>
+      <p id="lastPagePhoto"></p>
+      <script>
+        getUserInfo();
+      </script>
+      <script>
+        getPhotoID();
+        var autoChangePhotostatus = window.setInterval("getPhotoID()",1000);
+      </script>
+
+</body>
+</html>

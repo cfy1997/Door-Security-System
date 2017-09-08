@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>About us</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="../css/btn-style.css">
+  <link rel="stylesheet" href="../css/main-style.css" media="screen" type="text/css" />
+  <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+  <script src="../js/config.js">
+    // Initialize Firebase
+  </script>
+  <script src="../sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="../sweetalert/dist/sweetalert.css">
+</head>
+
+<body>
+  <script src="../js/firebase.js"></script>
+  <script src="../js/jumpPage.js"></script>
+
+    <div class="left-menu">
+      <div class="logo"><i></i>
+        <div>Home Secure System</div>
+      </div>
+      <div class="accordion">
+
+        <div class="section" onclick="jumpPage(this)" id="home">
+          <input type="radio" name="accordion-1" id="section-2" value="toggle"/>
+          <label for="section-2" ><span>Home</span></label>
+        </div>
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-1" />
+          <label for="section-1"><span>Devices</span></label>
+          <div class="content">
+            <ul>
+              <li id="camera" onclick="jumpPage(this)"><i></i><span>Camera</span></li>
+              <li id="buzzer" onclick="jumpPage(this)"><i></i><span>Buzzer</span></li>
+              <li id="led" onclick="jumpPage(this)"><i></i><span>LED</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section" id="overview" onclick="jumpPage(this)">
+          <input type="radio" name="accordion-1" id="section-3" value="toggle"/>
+          <label for="section-4"><span >System Overview</span></label>
+        </div>
+
+        <div class="section" id="gallery" onclick="jumpPage(this)">
+          <input type="radio" name="accordion-1" id="section-4"/>
+          <label for="section-4"><span >History Gallery</span></label>
+        </div>
+
+        <div class="section" id="about_us" onclick="jumpPage(this)">
+          <input type="radio" name="accordion-1" id="section-5" value="toggle" checked="checked"/>
+          <label for="section-5"><span >About Us</span></label>
+        </div>
+
+        <div class="section" onclick="signout()">
+          <input type="radio" name="accordion-1" id="section-6" />
+          <label for="section-6"><span id= "sign_out">Sign Out</span></label>
+        </div>
+
+      </div>
+    </div>
+
+
+  <div class="main-area">
+    <div class="main-text">
+      <img src="../img/contact.png" id="contacticon"  height="60px" width="60px"/>
+        <h1>About us</h1><br>
+        <div id="test">
+          <span id="inter5">
+          we are an innovative, passionate and customer oriented engineering student
+          team that dedicate all our efforts on making you feel safe and comfortable
+          without having to worry about your own safety at home.<br><br>
+          For more detailed information, or if you have any concerns, please contact our
+          team leader KangLong at qiukanglong@gmail.com
+          </span>
+        </div>
+        <br><p>Or if you prefer talking to us directly, please see the map below:</p>
+
+        <div class="main-functionality">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8783.721485032067!2d-123.25784266646478!3d49.262972279542296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672ca2d57b88b%3A0xf3a83ff5b054ce4d!2sMacleod+Bldg%2C+2356+Main+Mall%2C+Vancouver%2C+BC+V6T+1Z4!5e0!3m2!1sen!2sca!4v1490596024485" width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <br><br>
+        </div>
+
+    </div>
+  </div>
+
+  <p id="uid">not ready</p>
+  <p id="familyid">not ready</p>
+
+  <script>
+    getUserInfo();
+  </script>
+  <script src="../js/detectUrgent.js"></script>
+
+<div style="text-align:center;clear:both">
+
+
+
+</body>
+
+</html>

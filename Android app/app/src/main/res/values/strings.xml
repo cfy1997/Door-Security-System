@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DoorAccessSecurity</string>
+    <string name="door_access_security_app_client_id">1071319875822-qpmag34vb9ifgdls47tae9mta1ft89en.apps.googleusercontent.com</string>
+
+    <string name="unequal_password">Password does not match confirm</string>
+    <string name="user_creation_failed">User creation failed, enter another email</string>
+    <string name="user_creation_success">Account successfully created</string>
+    <string name="joining_house_failed">Cannot join house, entered wrong house name or password</string>
+    <string name="house_exists">House exists, create a new house name</string>
+    <string name="house_not_exist">House does not exist, join another house or create a new house</string>
+    <string name="fields_empty">Fields cannot be empty</string>
+    <string name="password_too_short">Password must be longer than 6 characters</string>
+    <string name="empty_string"> </string>
+
+    <string name="current_house_hint">Your current house is %1$s.</string>
+    <string name="switching_to_house">Switching to house %1$s ...</string>
+
+    <string name="buzzer_ringing">Buzzer Ringing</string>
+    <string name="sound_alarm">Sound Alarm</string>
+    <string name="sign_in_failed">Incorrect email or password</string>
+
+</resources>

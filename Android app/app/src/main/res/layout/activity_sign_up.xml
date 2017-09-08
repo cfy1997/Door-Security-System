@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:context="com.example.lucyzhao.dooraccesssecurity.SignUpActivity">
+
+    <TextView
+        style="@style/NormalTextViewStyle"
+        android:id="@+id/sign_up_hint"
+        android:layout_alignParentStart="true"
+        android:text="Enter your information"
+        />
+
+    <TextView
+        style="@style/NormalTextViewStyle"
+        android:id="@+id/house_creation_hint"
+        android:layout_below="@+id/create_house_button"
+        android:text="Enter your house information"
+        />
+
+    <TextView
+        style="@style/NormalTextViewStyle"
+        android:text="Don't have a house?"
+        android:id="@+id/no_house_text"
+        android:layout_marginBottom="15dp"
+        android:layout_alignBottom="@+id/create_house_button"/>
+
+
+    <EditText
+        style="@style/SignUpEditTextStyle"
+        android:hint="your email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/user_email_edit_text"
+        android:layout_below="@+id/sign_up_hint"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        style="@style/SignUpEditTextStyle"
+        android:hint="your password"
+        android:id="@+id/user_password_edit_text"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/user_email_edit_text"
+        />
+
+    <EditText
+        style="@style/SignUpEditTextStyle"
+        android:hint="confirm password"
+        android:id="@+id/confirm_user_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/user_password_edit_text" />
+
+
+    <EditText
+        android:hint="your house name"
+        android:id="@+id/house_name"
+        android:inputType="text"
+        style="@style/SignUpEditTextStyle"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/house_creation_hint"
+        />
+
+    <EditText
+        style="@style/SignUpEditTextStyle"
+        android:hint="your house password"
+        android:id="@+id/house_password"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/house_name"
+        />
+
+    <EditText
+        style="@style/SignUpEditTextStyle"
+        android:hint="confirm password"
+        android:id="@+id/confirm_house_password"
+        android:inputType="numberPassword"
+        android:layout_marginTop="10dp"
+        android:maxLength="6"
+        android:layout_below="@id/house_password"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Done"
+        style="@style/NormalButtonStyle"
+        android:layout_marginTop="32dp"
+        android:onClick="signUp"
+        android:id="@+id/done_button"
+        android:layout_below="@+id/confirm_house_password"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="create a house"
+        style="@style/TextButtonStyle"
+        android:id="@+id/create_house_button"
+        android:onClick="createHouse"
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/confirm_user_password"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
